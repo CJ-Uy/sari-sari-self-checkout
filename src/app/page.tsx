@@ -42,7 +42,7 @@ export default function Home() {
 				<div className="fixed right-5 bottom-20 z-15">
 					<div className="flex flex-col items-center gap-2">
 						<Button
-							className="bg-secondary/90 text-secondary-foreground h-16 w-16 rounded-full p-0 md:h-24 md:w-24"
+							className="bg-secondary/80 hover:bg-secondary text-secondary-foreground hover:text-secondary-foreground h-16 w-16 rounded-full p-0 md:h-24 md:w-24"
 							variant="ghost"
 						>
 							<ShoppingCart className="size-8 md:size-12" />
@@ -196,7 +196,7 @@ export default function Home() {
 			</main>
 			<footer className="shadow-t sticky bottom-0 z-10 bg-white dark:bg-gray-950">
 				<div className="container mx-auto flex items-center justify-around px-4 py-2">
-					<Link className="text-primary flex flex-col items-center gap-1" href="#">
+					<Link className="text-primary flex flex-col items-center gap-1" href="/">
 						<House className="h-6 w-6" />
 						<span className="text-xs">Home</span>
 					</Link>
