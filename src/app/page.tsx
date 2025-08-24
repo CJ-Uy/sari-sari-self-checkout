@@ -28,7 +28,7 @@ export default function Home() {
 						<Store className="text-primary h-6 w-6" />
 						<span className="text-lg font-bold text-gray-900 dark:text-gray-50">Arsari-sari</span>
 					</Link>
-					<div className="relative max-w-[200px] md:max-w-md flex-1">
+					<div className="relative max-w-[200px] flex-1 md:max-w-md">
 						<Search className="absolute top-1/2 left-3 h-5 w-5 -translate-y-1/2 text-gray-500 dark:text-gray-400" />
 						<Input
 							className="focus:border-primary focus:ring-primary w-full rounded-md border border-gray-200 bg-gray-100 py-2 pr-4 pl-10 text-sm focus:ring-1 focus:outline-none dark:border-gray-800 dark:bg-gray-800 dark:text-gray-50"
@@ -39,6 +39,16 @@ export default function Home() {
 				</div>
 			</header>
 			<main className="flex-1">
+				<div className="fixed right-5 bottom-20 z-15">
+					<div className="flex flex-col items-center gap-2">
+						<Button
+							className="bg-secondary/90 text-secondary-foreground h-16 w-16 rounded-full p-0 md:h-24 md:w-24"
+							variant="ghost"
+						>
+							<ShoppingCart className="size-8 md:size-12" />
+						</Button>
+					</div>
+				</div>
 				<section className="container mx-auto px-4 py-8">
 					<h2 className="mb-4 text-xl font-bold">Categories</h2>
 					<div className="grid grid-cols-4 place-items-center gap-x-2 gap-y-6">
